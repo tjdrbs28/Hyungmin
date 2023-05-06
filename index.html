@@ -14,101 +14,31 @@
             justify-content: center;
             background-image: url("arsenal.jpg");
         }
-
-        .entire_area {
-            width: 322x;
-            /*  가로크기 늘리고 싶을때 수정 */
-            background-color: skyblue;
-            height: 100%;
-        }
-
-        .photo_area {
-            margin-top: 30px;
-        }
-
-        .photo_frame {
-            background-color: white;
-            margin: 15px 20px;
-            height: 504px;
-            /*  세로크기 늘리고 싶을때 수정 */
-            background-size: cover;
-
-        }
-
-        .end {
+        .wrap{
+            width: 300px;
+            margin: 30px auto 0px auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
-
-        .title {
-            font-size: 35px;
-            font-weight: 100;
-            color: white;
-        }
-
-        .date {
-            font-size: 25px;
-            font-weight: 500;
-            color: white;
-        }
-
-        /* ./img1.png 현재 폴더에 있는 img1.png 파일에 접근하라는 명령 */
-
-
-        #img1 {
-            background-image: url("./Hyungmin.jpg");
-
-        }
-
-        #img2 {
-            background-image: url("./img2.png");
-
-        }
-
-        #img3 {
-            background-image: url("./img3.png");
-        }
-
-        #img4 {
-            background-image: url("./img4.png");
+        .JHM{
+            width: 300px;
+            height: 500px;
+/*            background-color: white;*/
+            background-image: url("Hyungmin.jpg");
+            background-position: center;
+            background-size: cover;
         }
     </style>
-
 </head>
 
 <body>
-    <div class="entire_area">
-        전체영역
-        <div class="photo_area">
-            사진영역
-            <div id="img1" class="photo_frame">
-                <span id="img1_desc" class="photo_desc">
-                    사진1
-                </span>
-            </div>
-            <div id="img2" class="photo_frame">
-                <span id="img2_desc" class="photo_desc">
-                    사진2
-                </span>
-            </div>
-            <div id="img3" class="photo_frame">
-                <span id="img3_desc" class="photo_desc">
-                    사진3
-                </span>
-            </div>
-            <div id="img4" class="photo_frame">
-                <span id="img4_desc" class="photo_desc">
-                    사진4
-                </span>
-            </div>
+    <div class="wrap">
+        <div class="JHM">
+            
         </div>
-        <div class="end">
-            끝부분
-            <p class="title">사진제목</p>
-            <p class="date">날짜</p>
-        </div>
-        전체영역
+
     </div>
 </body>
 
