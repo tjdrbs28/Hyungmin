@@ -1,105 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 공유시나오는 문구 이미지 수정 -->
-    <meta property="og:title" content="아이유 - 프로필 링크">
-    <meta property="og:description" content="아이유">
-    <meta property="og:image" content="아이유.jpeg">
-    <title>아이유 - 프로필 링크</title>
+    <title>Document</title>
 
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-
-        * {
-            font-family: "Pretendard", serif;
-        }
-
         body {
-            background-color: ivory
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("arsenal.jpg");
         }
 
-        .profile {
-
-            width: 100px;
-            height: 100px;
-
-            border-radius: 100%;
-            border: 2px solid white;
-
-            background-image: url(아이유.jpeg);
-            background-position: center;
-            background-size: cover;
+        .entire_area {
+            width: 700px;
+            /*  가로크기 늘리고 싶을때 수정 */
+            background-color: skyblue;
+            height: 100%;
         }
 
-        .main {
-            color: black;
-            font-size: 20px;
+        .photo_area {
             margin-top: 30px;
-            margin-bottom: 10px;
         }
 
-        .sub {
-            color: black;
-            font-size: 14;
-            margin-top: 0px;
-            margin-bottom: 30px;
+        .photo_frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 1000px;
+            /*  세로크기 늘리고 싶을때 수정 */
+            background-size: cover;
+
         }
 
-        .wrap {
-
-            width: 300px;
-            margin: 30px auto 0px auto;
+        .end {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
 
-        .wrap>a {
-            width: 300px;
-            height: 50px;
-            background-color: #b7d5ac;
-            border-radius: 8px;
-
-            margin-bottom: 10px;
-
-            font-size: 14px;
-            font-weight: bold;
-            color: black;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            text-decoration: none;
-
-            box-shadow: 3px 3px 5px 0px black;
+        .title {
+            font-size: 35px;
+            font-weight: 100;
+            color: white;
         }
 
-        .wrap>a:hover {
-            background-color: #f2f2f2;
+        .date {
+            font-size: 25px;
+            font-weight: 500;
+            color: white;
+        }
 
-            font-size: 20px;
+        /* ./img1.png 현재 폴더에 있는 img1.png 파일에 접근하라는 명령 */
+
+
+        #img1 {
+            background-image: url("./Hyungmin.jpg");
+
+        }
+
+        #img2 {
+            background-image: url("./img2.png");
+
+        }
+
+        #img3 {
+            background-image: url("./img3.png");
+        }
+
+        #img4 {
+            background-image: url("./img4.png");
         }
     </style>
+
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="profile"></div>
-        <h1 class="main">아이유</h1>
-        <p class="sub">아이유!</p>
-
-        <a target="_blank" href="https://www.instagram.com/dlwlrma/">아이유 인스타</a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww">아이유 유튜브</a>
+    <div class="entire_area">
+        전체영역
+        <div class="photo_area">
+            사진영역
+            <div id="img1" class="photo_frame">
+                <span id="img1_desc" class="photo_desc">
+                    사진1
+                </span>
+            </div>
+            <div id="img2" class="photo_frame">
+                <span id="img2_desc" class="photo_desc">
+                    사진2
+                </span>
+            </div>
+            <div id="img3" class="photo_frame">
+                <span id="img3_desc" class="photo_desc">
+                    사진3
+                </span>
+            </div>
+            <div id="img4" class="photo_frame">
+                <span id="img4_desc" class="photo_desc">
+                    사진4
+                </span>
+            </div>
+        </div>
+        <div class="end">
+            끝부분
+            <p class="title">사진제목</p>
+            <p class="date">날짜</p>
+        </div>
+        전체영역
     </div>
-
-
 </body>
 
 </html>
